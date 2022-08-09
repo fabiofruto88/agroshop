@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="" href="img/aguacate.svg">
+  <title>tu agro shop</title>
+</head>
+
+<body style="background-color: rgb(148, 96, 17 );">
+  <nav class="navbar navbar-expand-lg bg-success text-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white;">Tu agro shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="php/mostrar_prod.php" style="color: white;">Productos</a>
+          </li>
+          <!--  <li class="nav-item">
+                <a class="nav-link active" href="repot_ped_agr.html">Mis Pedidos</a> -->
+
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" style="color: white;">Action</a></li>
+            <li><a class="dropdown-item" href="#" style="color: white;">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#" style="color: white;">Something else here</a></li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active me" href="html/login.html" style="color: white;">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me" href="html/accesoRol.html" style="color: white;">Iniciar sesion</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal1  ">Contactenos</button>
+        <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+      </div>
+    </div>
+  </nav>
+  <form action="php/contactos.php" method="post" enctype="multipart/form-data">
+    <div class="modal" tabindex="-1" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Formulario de contacto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+
+            <div class="mb-3">
+              <label for="disabledTextInput" class="form-label mt-0"> Nombre completo * </label>
+              <input name="nombre" type="text" id="disabledTextInput" class="form-control"
+                placeholder="escribe tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Correo electronico *</label>
+              <input type="email" name="correo" class="form-control" id="exampleFormControlInput1"
+                placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+              <label for="disabledTextInput" class="form-label mt-0">WhatsApp * </label>
+              <input type="tel" name="whast" id="disabledTextInput" class="form-control"
+                placeholder="escribe tu numero">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+              <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-success">enviar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="container d-none d-lg-block mt-3">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href=""> <img src="img/aguacate.jpg" class="d-block w-100" alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Aguacate de la mejor calidad</h5>
+            <p>encontras variedades de productos agricolas a precio de distribuidor</p>
+            <p>PROMOCION 30% DESCUENTO</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href=""><img src="img/papa1.jpg" class="d-block w-100" alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Papa de la mejor calidad</h5>
+            <p>encontras variedades de productos agricolas a precio de distribuidor</p>
+            <p>PROMOCION 30% DESCUENTO</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/yuca-b.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Yuca de la mejor calidad</h5>
+            <p>encontras variedades de productos agricolas a precio de distribuidor</p>
+            <p>PROMOCION 30% DESCUENTO</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+  <div class="container mt-3 bg-light rounded  ">
+    <div class="row d-flex align-items-stretch">
+
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 p-2  rounded bg-light text-center  ">
+
+        <!--   style="border-radius: 1rem; margin: 1rem; padding: 1rem; background-color: rgba(255, 255, 255, .9);text-align: center;"> -->
+        <p class="h4">Apoya a nuestros campesino</p><br>
+
+        <img src="img/foto-senor-naranjas.png" alt="" style="max-width: 5rem;">
+        <p style="word-wrap: break-word;">Pobreza en el campo
+          Más que pobreza, en el campo colombiano hay indigencia. Mientras en las ciudades los pobres son el 30% y
+          los
+          indigentes el 7%; en el campo los pobres son el 65% y los indigentes el 33%. Este es el resultado de
+          décadas
+          de abandono y olvido.</p>
+
+      </div>
+      <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12  p-2 rounded text-center bg-light ">
+        <p class="h1">¿QUIENES SOMOS?</p><br>
+        <h4>somos una alternativa de comercio de nuestro campo colombiano</h4>
+        <p> Analizamos una problemática que afecta a los trabajadores del sector agrícola, gran parte de los
+          campesinos agricultores y sus familias les es poco conveniente el uso de intermediarios en la negociación de
+          sus ventas, también se ha evidenciado el bajo nivel de eficiencia al momento de comercializar sus productos
+          agrícolas a los mayoristas, dicha problemática se ve referenciada por el uso de los intermediarios quienes
+          manejan la logística de las ventas de los productos agrícolas y reducen el índice de ganancias netas de los
+          productores campesinos. <br> Consigo se busca la manera de poder conectar directamente a los productores
+          campesinos con los mayoristas para que los productores agrícolas se vean mayormente beneficiados de las
+          ganancias por ventas de sus productos.<br> El desarrollo de El sitio web servirá como una herramienta al de
+          realizar las ventas de los productos agros, tendrá una mejor facilidad para contactar al mayorista, y dicho
+          mayorista podrá contactarse directamente con un transportador de alimentos para llevar su producto. </p>
+      </div>
+      <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12 text-center p-2  rounded bg-light ">
+        <!--  <div class="d-flex flex-column mb-3 m-0 bg-light"> -->
+        <!--  <div style="background-color: rgba(255, 255, 255, .9);border-radius: 1rem;"> -->
+        <div>
+          <h6>Categorias</h6>
+        </div>
+        <div class="p-4">verduras</div>
+        <div class="p-4">lacteos</div>
+        <div class="p-4">frutas</div>
+        <div class="p-4">granos</div>
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <script src="js/iniciar_auto_modal.js"></script>
+  <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <br>
+
+</body>
+<footer class="text-center text-lg-start text-light bg-success text-muted mt-3">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4  ">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block text-light">
+      <span>Copyright © Todos los derechos de autor reservados, tecnologia desarrollada con ayuda del departamento de
+        ingenieria de
+        la universidad ITSA
+        Conéctese con nosotros en las redes sociales:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset text-light">
+        <i class="fab fa-facebook-f "></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class=" text-light">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>SHOP Del campo
+          </h6>
+          <p>
+            somos una alternativa de comercio de nuestro campo colombiano
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            desarrolladores
+          </h6>
+          <p>
+            <a href="https://www.instagram.com/jesulin_jimenez/" class="text-reset">Jesus Jimenez</a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/fabiofruto8/" class="text-reset">Fabio Fruto</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Power by
+
+          </h6>
+          <div> <img src="img/ITSA.png" alt="" style="max-width: 100px ; max-height:100px ;"></div>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Barranquilla, co, Atlantico</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            delcampo@itsa.edu.co
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +57 300 2549872</p>
+          <p><i class="fas fa-print me-3"></i> +57 320 4412611</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 text-light" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://www.itsa.edu.co/">departamento de ingenieria de la universidad
+      ITSA</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+</html>

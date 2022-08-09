@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>Agregar Producto</title>
+</head>
+
+<body style="background-color: rgb(148, 96, 17 );">
+
+  <nav class="navbar navbar-expand-lg bg-success" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"style="color: white;">Tu agro shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html"style="color: white;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../php/vista_agro.php"style="color: white;">Mis Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../php/report_ped_agr.php" style="color: white;">Mis Pedidos</a>
+
+            </a>
+            
+        </ul>
+        <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="col-xxl-10 col-xl-10 col-lg-11 col-md-11 col-sm-11 col-11 text-center mx-auto p-2 mt-5 rounded bg-light">
+    <form class="row g-3 m-1 p-1" method="post" action="../php/agg_prod.php" enctype="multipart/form-data">
+      <label for="formGroupExampleInput" class="form-label">AGREGAR PRODUCTO</label>
+      <div class="row g-3">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+          <label for="formGroupExampleInput" class="form-label">Nombre del producto:</label>
+          <input type="text" name="prod" id="prod" class="form-control" placeholder="Nombre del producto" aria-label="ombre del producto">
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" class="form-label">Precio del producto:</label>
+          <input type="number" name="precio" id="precio" class="form-control" placeholder="$: precio del producto"
+            aria-label="precio del producto">
+        </div>
+
+      </div>
+      <div class="row g-3">
+        <div class="col">
+          <label for="inputState" class="form-label">tipo de producto</label>
+          <select id="inputState" name="t_pro"  class="form-select">
+            <option selected>elige...</option>
+            <option>tuberculo</option>
+            <option>fruta</option>
+            <option>vegetal</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="formGroupExampleInput" class="form-label">Peso por bulto</label>
+          <input type="number" name="peso" class="form-control" placeholder="cantidad por bulto" aria-label="cantidad por bulto">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad/municipio</label>
+          <input type="text" name="ciudad" class="form-control" id="inputCity">
+        </div>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Departamento</label>
+            <select id="inputState" name="departamento" class="form-select">
+              <option selected>elegir...</option>
+              <option>amazonas</option>
+              <option>Antioquia</option>
+              <option>Arauca</option>
+              <option>Atlántico</option>
+              <option>Bolívar</option>
+              <option>Boyacá</option>
+              <option>Caldas</option>
+              <option>Caquetá</option>
+              <option>Casanare</option>
+              <option>Cauca</option>
+              <option>Cesar</option>
+              <option>Chocó</option>
+              <option>Córdoba</option>
+              <option>Cundinamarca</option>
+              <option>Guainía</option>
+              <option>Guaviare</option>
+              <option>Huila</option>
+              <option>La Guajira</option>
+              <option>Magdalena</option>
+              <option>Meta</option>
+              <option>Nariño</option>
+              <option>Norte de Santander</option>
+              <option>Putumayo</option>
+              <option>Quindio</option>
+              <option>Risaralda</option>
+              <option>Santander</option>
+              <option>Sucre</option>
+              <option>Tolima</option>
+              <option>Valle del Cauca</option>
+              <option>Vaupés</option>
+              <option>Vichada</option>
+
+            </select>
+
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Agrega fotos del producto</label>
+            <input class="form-control" name="img" type="file" id="formFile" accept="image/*">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Descripcion del producto</label>
+            <textarea class="form-control" name="descrip"  rows="3"></textarea>
+          </div>
+        </div>
+
+
+      </div>
+      <button class="btn btn-success" type="submit" name="agregar" >agregar</button>
+      
+      <a class="btn btn-primary" href="../php/vista_agro.php" role="button">Regresar</a>
+    </form>
+
+
+  </div>
+
+  <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+</body>
+<footer class="text-center text-lg-start text-light bg-success text-muted mt-3">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4  ">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block text-light">
+      <span>Copyright © Todos los derechos de autor reservados, tecnologia desarrollada con ayuda del departamento de
+        ingenieria de
+        la universidad ITSA
+        Conéctese con nosotros en las redes sociales:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset text-light">
+        <i class="fab fa-facebook-f "></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class=" text-light">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>SHOP Del campo
+          </h6>
+          <p>
+            somos una alternativa de comercio de nuestro campo colombiano
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            desarrolladores
+          </h6>
+          <p>
+            <a href="https://www.instagram.com/jesulin_jimenez/" class="text-reset">Jesus Jimenez</a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/fabiofruto8/" class="text-reset">Fabio Fruto</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Power by
+
+          </h6>
+          <div> <img src="img/ITSA.png" alt="" style="max-width: 100px ; max-height:100px ;"></div>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Barranquilla, co, Atlantico</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            delcampo@itsa.edu.co
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +57 300 2549872</p>
+          <p><i class="fas fa-print me-3"></i> +57 320 4412611</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 text-light" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://www.itsa.edu.co/">departamento de ingenieria de la universidad
+      ITSA</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+</html>
+</html>

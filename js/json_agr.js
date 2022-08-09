@@ -1,0 +1,1 @@
+const agri = fetch('http://localhost/parcial/json/data_agricultor.json');

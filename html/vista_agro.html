@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="../libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Agricultor</title>
+</head>
+
+<body style="background-color: rgb(148, 96, 17 );">
+
+  <!-- <nav class="navbar" style="background-color: #239B56 ;">
+        <!-- Navbar content -->
+  <!--  </nav> -->
+  <!--  -->
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #239B56 ;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white;">Tu agro shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html" style="color: white;">Inicio</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#" style="color: white;">Action</a></li>
+              <li><a class="dropdown-item" href="#" style="color: white;">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" style="color: white;">Something else here</a></li>
+            </ul>
+          <li> <a class="nav-link active" aria-current="page" href="repot_ped_agr.html" style="color: white;">mis
+              pedidos</a></li>
+          </li>
+          <li> <a class="nav-link active" aria-current="page" href="vista_agro.html" style="color: white;">mis
+              productos</a></li>
+          </li>
+
+
+        </ul>
+        <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+      </div>
+    </div>
+  </nav>
+  <!--   <-- nav bar -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/aguacate.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../img/papa1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../img/yuca-b.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <div class="container-fluid mt-3 " >
+    <div class="row ">
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 bg-light text-center rounded m-1 justify-content-center " >
+      
+        <p class="h6">Agregar Nuevo Producto</p>
+        <!--  <img src="img/yuca-b.jpg" alt="" style="max-width: 10rem ;"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" style=" align-items: center;" width="30%" height="30%"
+          fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+          <path
+            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+        </svg>
+        <br>
+        <a class="btn btn-success btn-sm" href="form_agg_prod.html" role="button">Agregar</a>
+      </div>
+
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 bg-light text-center rounded my-1 justify-content-center ">
+        <p class="h6">Modificar Un Producto Existente</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="30%" fill="currentColor"
+          class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" />
+          <path
+            d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" />
+        </svg>
+        <br>
+        <a class="btn btn-secondary btn-sm" href="actualizar_prod.html" role="button">Actualizar</a>
+
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3  col-3 bg-light text-center rounded m-1 p-1 justify-content-center">
+       <p class="h6">Eliminar Un Producto Existente</p> 
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30%" height="30%" fill="currentColor"
+          class="bi bi-backspace-fill" viewBox="0 0 16 16">
+          <path
+            d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z" />
+        </svg>
+        <br>
+        <a class="btn btn-danger btn-sm" href="eliminar_prod.html" role="button">Eliminar</a>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+
+  <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

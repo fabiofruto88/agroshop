@@ -1,0 +1,23 @@
+body {
+
+    font-family: Arial;
+    padding: 2rem;
+    }
+#contenerdor_t{
+    border: 2px solid black;
+    padding: 2rem;
+
+
+
+}
+.div{
+    background-color: aliceblue;
+}
+#row1{
+    background-color: aliceblue;
+}
+
+
+h3{
+    text-align: center;
+}
