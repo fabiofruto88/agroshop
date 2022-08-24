@@ -140,7 +140,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
       <div class="modal-body">
       <select class="form-select" name="estado" aria-label="Default select example">
   <option >elegir</option>
-  <option selected >pendiente</option>
+  <option  >pendiente</option>
   <option >recogido</option>
   <option >en camino</option>
   <option >entregado</option>

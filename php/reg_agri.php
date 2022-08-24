@@ -32,7 +32,8 @@ $tipo_id_ag=$_POST['t_id_ag'];
 $telefono=$_POST['tel_ag'];
 $direccion=$_POST['lugar_ag'];
 $contraseña=$_POST['contra_ag'];
-$consulta = "INSERT INTO proveedores VALUES ('$nombre','$num_id','$tipo_id_ag','$contraseña','$telefono','$direccion')";//se agg a la tabla
+
+$consulta = "INSERT INTO `proveedores` (`nombre_proveedor`, `id_proveedor`, `tipo_id`, `password`, `telefono`, `direccion`, `estado`) VALUES ('$nombre','$num_id','$tipo_id_ag','$contraseña','$telefono','$direccion', 'activo' )";//se agg a la tabla
 mysqli_query($conexion, $consulta);
 mysqli_close($conexion);
 echo "<script>

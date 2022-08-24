@@ -37,7 +37,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html" style="color: white;">Inicio</a>
+ 
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="vista_admin.php" style="color: white;">modificar productos</a>
@@ -56,7 +56,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
               <a class="nav-link active me" href="../php/mostar_adm_cli.php" style="color: white;">reporte de usuarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active me" href="reporte_total_ventas_adm.html" style="color: white;">Reporte ventas</a>
+              
             </li>
 
           </ul>
@@ -88,7 +88,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
 
             <!-- <a class="btn btn-secondary" href="../php/actualizar_adm_pro.php" role="button">Actualizar</a> -->
            
-              <form action="actualizar_adm_ag.php" method="post">
+              <form action="actualizar_adm_pro.php" method="post">
                 <select name="cod_prod" id="cod_prod" class="form-control">
                   <option value="value2" selected>elegir</option>
                   <?php

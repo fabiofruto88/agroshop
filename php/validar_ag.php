@@ -8,7 +8,7 @@ $_SESSION['usuario']=$usuario;
 
 
 
-$consulta="SELECT `nombre_proveedor`, `id_proveedor`, `tipo_id`, `password`, `telefono`, `direccion` FROM `proveedores`  where `id_proveedor` ='$usuario' and  `password` ='$contra' ";
+$consulta="SELECT `nombre_proveedor`, `id_proveedor`, `tipo_id`, `password`, `telefono`, `direccion` FROM `proveedores`  where `id_proveedor` ='$usuario' and  `password` ='$contra'  and `estado`='activo'  ";
 $resultado= mysqli_query($conexion, $consulta);
 
 $filas=mysqli_num_rows($resultado);

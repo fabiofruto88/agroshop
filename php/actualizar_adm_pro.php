@@ -1,14 +1,14 @@
 <?php
-session_start();
+session_start();$sesion = $_SESSION['usuario'];
 error_reporting(0);
 
 include('config.php');
-$sesion = $_SESSION['usuario'];
+
 if ($sesion == null || $sesion == '') {
     echo 'no tiene acceso';
     die();
 }
-$consulta = "SELECT `id_adm`, `nombre`, `password` FROM `administrador`  WHERE `id_adm` ='$sesion' ";
+$consulta = "SELECT * FROM `administrador`  WHERE `id_adm` ='$sesion' ";
 $resultado = mysqli_query($conexion, $consulta);
 while ($mostar = mysqli_fetch_array($resultado)) {
 
@@ -38,7 +38,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
                             <a class="nav-link active" aria-current="page" href="../index.html" style="color: white;">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../php/validar_adm.php" style="color: white;">modificar productos</a>
+                            <a class="nav-link active" href="../php/vista_admin.php" style="color: white;">modificar productos</a>
                         </li>
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -122,7 +122,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
                 </tbody>
             </table>
             <div class="col text-center my-2">
-              <button class="btn btn-success" type="button" value="Actualizar" data-bs-toggle="modal" data-bs-target="#modal1  ">Actualizar</button>
+              <button class="btn btn-success" type="button" value="Actualizar" data-bs-toggle="modal" data-bs-target="#modal1">Actualizar</button>
               <a class="btn btn-primary" href="../php/vista_admin.php" role="button">Regresar</a>
         
             </div>

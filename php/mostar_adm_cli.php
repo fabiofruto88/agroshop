@@ -36,7 +36,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html" style="color: white;">Inicio</a>
+             
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="vista_admin.php" style="color: white;">modificar productos</a>
@@ -56,8 +56,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
                 usuarios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active me" href="reporte_total_ventas_adm.html" style="color: white;">Reporte
-                ventas</a>
+            
             </li>
 
           </ul>
@@ -116,8 +115,9 @@ while ($mostar = mysqli_fetch_array($resultado)) {
                     <!-- <input  value="<?php echo $mostar['id_cliente'] ?>" name="txtid_cliente" readonly> -->
                   <!-- type="hidden" -->
                 <td>
-                <a class="table__item__link btn btn-danger" href="eliminar_c.php?id=<?php echo $mostar['id_cliente'] ?>">Eliminar</a>
+                <!-- <a class="table__item__link btn btn-danger" href="eliminar_c.php?id=<?php echo $mostar['id_cliente'] ?>">Eliminar</a> -->
                   <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal1  ">eliminar</button> -->
+                
                 </td>
 
                 </td>
@@ -192,7 +192,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
                   <!-- <form action="eliminar_a.php" method="post">
                     <input type="hidden" href="eliminar_a.php?id=<?php echo $mostar['id_proveedor'] ?>" readonly> -->
                 <td>
-                <a class="table__item__link btn btn-danger" href="eliminar_a.php?id=<?php echo $mostar['id_proveedor'] ?>">Eliminar</a>
+                <!-- <a class="table__item__link btn btn-danger" href="eliminar_a.php?id=<?php echo $mostar['id_proveedor'] ?>">Eliminar</a> -->
                   <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2  ">eliminar</button> -->
 <!--   <div class="modal" tabindex="-1" id="modal2">
           <div class="modal-dialog">
@@ -269,7 +269,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
            <!--  <form action="eliminar_tr.php" method="post">
                     <input type="hidden" value="<?php echo $mostar['id_trans'] ?>" name="txtid_tr" readonly> -->
                 <td><!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal3  ">eliminar</button> --> 
-                <a class="table__item__link btn btn-danger" href="eliminar_tr.php?id=<?php echo $mostar['id_trans'] ?>">Eliminar</a>
+                <!-- <a class="table__item__link btn btn-danger" href="eliminar_tr.php?id=<?php echo $mostar['id_trans'] ?>">Eliminar</a> -->
               </td>
 
                 

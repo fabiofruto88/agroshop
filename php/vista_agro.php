@@ -57,7 +57,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
           <li> <a class="nav-link active" aria-current="page" href="report_ped_agr.php" style="color: white;">mis
               ventas</a></li>
           </li>
-          <li> <a class="nav-link active" aria-current="page" href="vista_agro.html" style="color: white;">mis
+          <li> <a class="nav-link active" aria-current="page" href="vista_agro.php" style="color: white;">mis
               productos</a></li>
           </li>
           <li> <a class="nav-link active" aria-current="page" href="opciones_tr.php" style="color: white;">transporte</a></li>

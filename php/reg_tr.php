@@ -34,7 +34,7 @@ $tipo_id_tr=$_POST['t_id_tr'];
 $telefono=$_POST['tel_tr'];
 $direccion=$_POST['direccion_tr'];
 $contraseña=$_POST['contraseña_tr'];
-$consulta = "INSERT INTO `transportador` VALUES ('$nombre','$num_id','$tipo_id_tr','$contraseña','$telefono','$direccion')";//se agg a la tabla
+$consulta = "INSERT INTO `transportador` VALUES ('$nombre','$num_id','$tipo_id_tr','$contraseña','$telefono','$direccion','activo')";//se agg a la tabla
 mysqli_query($conexion, $consulta);
 mysqli_close($conexion);
 echo "<script>

@@ -74,8 +74,8 @@ while ($mostar = mysqli_fetch_array($resultado)) {
 
 
     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center mx-auto p-auto mt-5 bg-light rounded">
-        <div class="table-responsive-lg m-2">
-            <p class="h1 text-center m-3">Reporte Total usuarios clientes</p>
+        <div class="table-responsive-xxl m-2">
+            <p class="h1 text-center m-3">Reporte transportador</p>
             <table class="table ">
 
                 <thead>
@@ -112,6 +112,15 @@ while ($mostar = mysqli_fetch_array($resultado)) {
                             <td><input type="text" value="<?php echo $mostar['password'] ?>" name="pass"></td>
                             <td><input type="text" value="<?php echo $mostar['telefono'] ?>" name="tel"></td>
                             <td><input type="text" value="<?php echo $mostar['direccion'] ?>" name="dir"></td>
+                            <td>
+                            <div class="dropdown">
+                            <select class="form-select" name="estado" aria-label="Default select example">
+  <option value="<?php echo $mostar['estado'] ?>" selected><?php echo $mostar['estado'] ?></option>
+  <option value="activo">activo</option>
+  <option value="inactivo">inactivo</option>
+
+</select>
+</div></td>
                             <td> <input class="btn btn-success" type="submit" value="actualizar"></td>
                             
                         </tr>

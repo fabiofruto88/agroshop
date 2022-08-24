@@ -6,6 +6,8 @@ if ($sesion== null|| $sesion== '') {
   die();
 }
 
+
+
 include('config.php');
 
 $consulta="SELECT `id_cliente`, `Nombre`, `telefono`, `direccionc`, `passw` FROM cliente where `id_cliente` ='$sesion' ";
@@ -76,46 +78,6 @@ while ($mostar = mysqli_fetch_array($resultado)) {
       </nav>
     <!--   <-- nav bar --> 
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/aguacate.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../img/papa1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../img/yuca-b.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        
-      </div>
-
 <!-- <--- --------- ---> 
 <div class="container-fluid  mt-2 ">
        
@@ -133,7 +95,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6  text-center pt-3">
 
                <div class="card">
-                    
+               <form id="formulario" name="formulario" method="post" action="cart.php">
                    <img src="data:image/jpg;base64, <?php echo base64_encode($row['img']) ; ?> " class="card-img-top" alt="..."style="min-height: 150px;max-height: 150px;" >
                    <div class="card" style="border-color: none; ">
                        <h5 class="card-title">
@@ -148,7 +110,7 @@ while ($mostar = mysqli_fetch_array($resultado)) {
                       
                        </p6>
                        <a href="detalles_pr_cli.php?id=<?php echo $row['cod_producto'];?>& token=<?php echo hash_hmac('sha1', $row['cod_producto'],KEY_TOKEN);   ?>" class="btn btn-success btn-sm">ver Producto</a>
-                   
+                       
                      </div>
                </div>
 
@@ -157,6 +119,8 @@ while ($mostar = mysqli_fetch_array($resultado)) {
            <?php
        }
    ?>
+    
+   </form>
 
 
 

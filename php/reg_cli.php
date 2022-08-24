@@ -32,7 +32,7 @@ $num_id=$_POST['num_id_cli'];
 $telefono=$_POST['tel_cli'];
 $direccion=$_POST['direccion_c'];
 $contraseña=$_POST['contraseña_cli'];
-$consulta = "INSERT INTO cliente VALUES ('$num_id','$nombre','$telefono','$direccion','$contraseña')";//se agg a la tabla
+$consulta = "INSERT INTO cliente VALUES ('$num_id','$nombre','$telefono','$direccion','$contraseña','activo')";//se agg a la tabla
 mysqli_query($conexion, $consulta);
 mysqli_close($conexion);
 echo "<script>
